@@ -8,7 +8,7 @@
 /*Variáveis*/
 :root {
   --text-color: #ffffff;
-  --bg-url: url(/assets/bg-darkmode-desktop.png);
+  --bg-url: url(/assets/bg-darkmode-mobile.png);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --bg-button-color: rgba(255, 255, 255, 0.1);
   --bg-button-color-hover: rgba(255, 255, 255, 0.05);
@@ -18,7 +18,7 @@
 /*Theme Light*/
 .light {
   --text-color: black;
-  --bg-url: url(/assets/bg-lightmode-desktop.png);
+  --bg-url: url(/assets/bg-lightmode-mobile.png);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --bg-button-color: rgba(0, 0, 0, 0.05);
   --bg-button-color-hover: rgba(0, 0, 0, 0.02);
@@ -28,6 +28,7 @@
 /*End Theme Light*/
 /*End Variáveis*/
 body {
+  height: 100vh;
   font-family: "Kanit", sans-serif;
   color: var(--text-color);
   background: var(--bg-url) no-repeat top center/cover;
@@ -35,7 +36,8 @@ body {
 /* General Container*/
 .container {
   text-align: center;
-  width: 360px;
+  width: 100%;
+  max-width: 590px;
   padding: 0 1.5rem;
   margin: auto;
 }
@@ -173,3 +175,14 @@ footer {
 footer a {
   color: var(--text-color);
 }
+ /* Media Queries*/
+
+ @media (min-width: 700px){
+      :root{
+        --bg-url: url(/assets/bg-darkmode-desktop.jpg);
+      }
+
+      .light{
+        --bg-url: url(/assets/bg-lightmode-desktop.jpg);
+      }
+ }
