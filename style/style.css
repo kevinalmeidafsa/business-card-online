@@ -78,13 +78,14 @@ body {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+
+  animation: slide-out 0.5s;
 }
 #switch button:hover {
   outline: var(--bg-color-social-links) solid 8px;
 }
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.5s forwards;
 }
 
 .light #switch button:hover {
@@ -186,3 +187,24 @@ footer a {
         --bg-url: url(/assets/bg-lightmode-desktop.jpg);
       }
  }
+
+ /* Animations */
+
+@keyframes slide-in{
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+  
+}
+
+@keyframes slide-out {
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0;
+  }
+}
