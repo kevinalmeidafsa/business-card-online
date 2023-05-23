@@ -8,22 +8,22 @@
 /*Variáveis*/
 :root {
   --text-color: #ffffff;
-  --bg-url: url(./assets/bg-darkmode-mobile.png);
+  --bg-url: url(../assets/bg-darkmode-mobile.png);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --bg-button-color: rgba(255, 255, 255, 0.1);
   --bg-button-color-hover: rgba(255, 255, 255, 0.05);
   --bg-color-social-links: rgba(255, 255, 255, 0.2);
-  --icon-toggle: url(./assets/moon-stars.svg);
+  --icon-toggle: url(../assets/moon-stars.svg);
 }
 /*Theme Light*/
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-lightmode-mobile.png);
+  --bg-url: url(../assets/bg-lightmode-mobile.png);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --bg-button-color: rgba(0, 0, 0, 0.05);
   --bg-button-color-hover: rgba(0, 0, 0, 0.02);
   --bg-color-social-links: rgba(0, 0, 0, 0.1);
-  --icon-toggle: url(./assets/sun.svg);
+  --icon-toggle: url(../assets/sun.svg);
 }
 /*End Theme Light*/
 /*End Variáveis*/
@@ -180,11 +180,11 @@ footer a {
 
  @media (min-width: 700px){
       :root{
-        --bg-url: url(./assets/bg-darkmode-desktop.jpg);
+        --bg-url: url(../assets/bg-darkmode-desktop.jpg);
       }
 
       .light{
-        --bg-url: url(./assets/bg-lightmode-desktop.jpg);
+        --bg-url: url(../assets/bg-lightmode-desktop.jpg);
       }
  }
 
